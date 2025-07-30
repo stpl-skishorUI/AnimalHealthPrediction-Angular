@@ -218,6 +218,12 @@ body {
     margin-bottom: 3px;
 }
 
+.form-container .form-data {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--bs-body-color);
+}
+
 .form-container .btn-group {
     display: grid;
     gap: 0.75rem;
