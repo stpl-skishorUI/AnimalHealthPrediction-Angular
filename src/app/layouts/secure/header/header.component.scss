@@ -1,0 +1,11 @@
+.btn-logout {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+    border: solid 1px #ccc;
+    padding: 5px 10px;
+}
+
+.btn-logout:hover {
+    background-color: var(--bs-tertiary-color);
+}
