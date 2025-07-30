@@ -1,7 +1,7 @@
 <div class="page-header">
     <i class="las la-brain"></i>Animal Assessment
 </div>
-<div class="card rounded-3 form-container">
+<div class="card rounded-3 form-container border-0 mb-5">
     <div class="card-body">
         <!-- Season buttons -->
         <div class="mb-3">
@@ -155,9 +155,7 @@
 
         <!-- visible symptoms -->
         <div class="mb-0">
-            <div class="form-label text-purple">Vaccination Status <small class="text-muted fs-70">(Select all that
-                    apply)</small>
-            </div>
+            <div class="form-label text-purple">Vaccination Status</div>
             <div class="btn-group" role="group">
                 <input type="radio" class="btn-check" name="btnVaccStatus" id="btnuptodate" autocomplete="off">
                 <label class="btn" for="btnuptodate">
@@ -178,5 +176,16 @@
                 </label>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="fixed-bottom bg-body px-3 py-2 shadow border-top">
+    <div class="d-flex justify-content-between gap-2">
+        <button class="btn btn-main-light w-50 fs-main py-2 rounded-5 fw-bold" type="button">
+            <i class="las la-sync-alt fs-90"></i> RESET
+        </button>
+        <button class="btn btn-main w-50 fs-main py-2 rounded-5 fw-bold" type="button">
+            <i class="las la-search fs-90"></i> PREDICT
+        </button>
     </div>
 </div>
