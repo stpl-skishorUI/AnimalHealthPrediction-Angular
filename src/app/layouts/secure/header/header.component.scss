@@ -4,8 +4,9 @@
     color: var(--bs-emphasis-color);
     border: solid 1px #ccc;
     padding: 5px 10px;
+    background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .btn-logout:hover {
-    background-color: var(--bs-tertiary-color);
+    background-color: var(--bs-dark-bg-subtle) !important;
 }
