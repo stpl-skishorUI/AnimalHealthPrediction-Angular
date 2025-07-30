@@ -18,3 +18,16 @@
     font-size: 1.3rem;
     color: var(--main-color);
 }
+
+.btn-back {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+    border: solid 1px #ccc;
+    padding: 5px 10px;
+    background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.btn-back:hover {
+    background-color: var(--bs-dark-bg-subtle) !important;
+}
