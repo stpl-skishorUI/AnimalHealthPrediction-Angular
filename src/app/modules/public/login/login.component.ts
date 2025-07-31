@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     }
     if (this.username === this.credentials.username && this.password === this.credentials.password) {
       alert('Login successful!');
+      localStorage.setItem('username', this.username);
       this.router.navigate(['/prediction-form']);
     } else {
       alert('Invalid username or password.');
