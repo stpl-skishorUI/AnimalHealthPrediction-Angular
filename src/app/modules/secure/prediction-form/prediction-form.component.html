@@ -1,191 +1,204 @@
-<div class="page-header">
-    <i class="las la-brain"></i>Animal Assessment
-</div>
-<div class="card rounded-3 form-container border-0 mb-5">
-    <div class="card-body">
-        <!-- Season buttons -->
-        <div class="mb-3">
-            <div class="form-label text-pink">Season</div>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnSeason" id="btnSummer" autocomplete="off">
-                <label class="btn" for="btnSummer">
-                    <img src="assets/images/season/summer.svg" alt="Summer" class="season-icon">
-                    Summer
-                </label>
-
-                <input type="radio" class="btn-check" name="btnSeason" id="btnRainy" autocomplete="off">
-                <label class="btn" for="btnRainy">
-                    <img src="assets/images/season/rainy.svg" alt="Rainy" class="season-icon">
-                    Rainy
-                </label>
-
-                <input type="radio" class="btn-check" name="btnSeason" id="btnWinter" autocomplete="off">
-                <label class="btn" for="btnWinter">
-                    <img src="assets/images/season/winter.svg" alt="Winter" class="season-icon">
-                    Winter
-                </label>
-            </div>
+<div class="row justify-content-center">
+    <div class="col-sm-4">
+        <div class="page-header">
+            <i class="las la-brain"></i>Animal Assessment
         </div>
+        <div class="card rounded-3 form-container border-0 mb-5">
+            <div class="card-body">
+                <!-- Season buttons -->
+                <div class="mb-3">
+                    <div class="form-label text-pink">Season</div>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnSeason" id="btnSummer" autocomplete="off">
+                        <label class="btn" for="btnSummer">
+                            <img src="assets/images/season/summer.svg" alt="Summer" class="season-icon">
+                            Summer
+                        </label>
 
-        <!-- Climate Type -->
-        <div class="mb-3">
-            <div class="form-label text-blue">Climate Type</div>
-            <div class="btn-group w-100" role="group">
-                <input type="radio" class="btn-check" name="btnClimateType" id="btnHotDry" autocomplete="off">
-                <label class="btn" for="btnHotDry">
-                    <img src="assets/images/climate-type/hot-dry.svg" alt="Hot-Dry" class="season-icon">
-                    Hot-Dry
-                </label>
-                <input type="radio" class="btn-check" name="btnClimateType" id="btnHumid" autocomplete="off">
-                <label class="btn" for="btnHumid">
-                    <img src="assets/images/climate-type/humid.svg" alt="Humid" class="season-icon">
-                    Humid
-                </label>
-                <input type="radio" class="btn-check" name="btnClimateType" id="btnColdWet" autocomplete="off">
-                <label class="btn" for="btnColdWet">
-                    <img src="assets/images/climate-type/cold-wet.svg" alt="Cold-Wet" class="season-icon">
-                    Cold-Wet
-                </label>
-            </div>
-        </div>
+                        <input type="radio" class="btn-check" name="btnSeason" id="btnRainy" autocomplete="off">
+                        <label class="btn" for="btnRainy">
+                            <img src="assets/images/season/rainy.svg" alt="Rainy" class="season-icon">
+                            Rainy
+                        </label>
 
-        <!-- animal stage -->
-        <div class="mb-3">
-            <div class="form-label text-indigo">Animal Stage</div>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnAnimalStage" id="btnCalf" autocomplete="off">
-                <label class="btn" for="btnCalf">
-                    <img src="assets/images/animal-stage/calf.svg" alt="Calf" class="season-icon">
-                    Calf
-                </label>
-                <input type="radio" class="btn-check" name="btnAnimalStage" id="btnHeifer" autocomplete="off">
-                <label class="btn" for="btnHeifer">
-                    <img src="assets/images/animal-stage/heifer.svg" alt="Heifer" class="season-icon">
-                    Heifer
-                </label>
-                <input type="radio" class="btn-check" name="btnAnimalStage" id="btnLactating" autocomplete="off">
-                <label class="btn" for="btnLactating">
-                    <img src="assets/images/animal-stage/lactating.svg" alt="Lactating" class="season-icon">
-                    Lactating
-                </label>
-                <input type="radio" class="btn-check" name="btnAnimalStage" id="btnPregnant" autocomplete="off">
-                <label class="btn" for="btnPregnant">
-                    <img src="assets/images/animal-stage/pregnant.svg" alt="Pregnant" class="season-icon">
-                    Pregnant
-                </label>
-                <input type="radio" class="btn-check" name="btnAnimalStage" id="btnAdult" autocomplete="off">
-                <label class="btn" for="btnAdult">
-                    <img src="assets/images/animal-stage/adult.svg" alt="Adult" class="season-icon">
-                    Adult
-                </label>
-            </div>
-        </div>
+                        <input type="radio" class="btn-check" name="btnSeason" id="btnWinter" autocomplete="off">
+                        <label class="btn" for="btnWinter">
+                            <img src="assets/images/season/winter.svg" alt="Winter" class="season-icon">
+                            Winter
+                        </label>
+                    </div>
+                </div>
 
-        <!-- behavior -->
-        <div class="mb-3">
-            <div class="form-label text-teal">Behavior</div>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnBehavior" id="btnNormal" autocomplete="off">
-                <label class="btn" for="btnNormal">
-                    <img src="assets/images/behavior/normal.svg" alt="Normal" class="season-icon">
-                    Normal
-                </label>
-                <input type="radio" class="btn-check" name="btnBehavior" id="btnAggressive" autocomplete="off">
-                <label class="btn" for="btnAggressive">
-                    <img src="assets/images/behavior/aggressive.svg" alt="Aggressive" class="season-icon">
-                    Aggressive
-                </label>
-                <input type="radio" class="btn-check" name="btnBehavior" id="btnIsolated" autocomplete="off">
-                <label class="btn" for="btnIsolated">
-                    <img src="assets/images/behavior/isolated.svg" alt="Isolated" class="season-icon">
-                    Isolated
-                </label>
-                <input type="radio" class="btn-check" name="btnBehavior" id="btnLethargic" autocomplete="off">
-                <label class="btn" for="btnLethargic">
-                    <img src="assets/images/behavior/lethargic.svg" alt="Lethargic" class="season-icon">
-                    Lethargic
-                </label>
-                <input type="radio" class="btn-check" name="btnBehavior" id="btnRestless" autocomplete="off">
-                <label class="btn" for="btnRestless">
-                    <img src="assets/images/behavior/restless.svg" alt="Restless" class="season-icon">
-                    Restless
-                </label>
-            </div>
-        </div>
+                <!-- Climate Type -->
+                <div class="mb-3">
+                    <div class="form-label text-blue">Climate Type</div>
+                    <div class="btn-group w-100" role="group">
+                        <input type="radio" class="btn-check" name="btnClimateType" id="btnHotDry" autocomplete="off">
+                        <label class="btn" for="btnHotDry">
+                            <img src="assets/images/climate-type/hot-dry.svg" alt="Hot-Dry" class="season-icon">
+                            Hot-Dry
+                        </label>
+                        <input type="radio" class="btn-check" name="btnClimateType" id="btnHumid" autocomplete="off">
+                        <label class="btn" for="btnHumid">
+                            <img src="assets/images/climate-type/humid.svg" alt="Humid" class="season-icon">
+                            Humid
+                        </label>
+                        <input type="radio" class="btn-check" name="btnClimateType" id="btnColdWet" autocomplete="off">
+                        <label class="btn" for="btnColdWet">
+                            <img src="assets/images/climate-type/cold-wet.svg" alt="Cold-Wet" class="season-icon">
+                            Cold-Wet
+                        </label>
+                    </div>
+                </div>
 
-        <!-- visible symptoms -->
-        <div class="mb-3">
-            <div class="form-label text-danger">Visible Symptoms <small class="text-muted fs-70">(Select all that
-                    apply)</small>
-            </div>
-            <div class="btn-group" role="group">
-                <input type="checkbox" class="btn-check" id="btnNasalDischarge" autocomplete="off">
-                <label class="btn" for="btnNasalDischarge">
-                    <img src="assets/images/visible-symptoms/nasal-discharge.svg" alt="Nasal Discharge"
-                        class="season-icon">
-                    Nasal Discharge
-                </label>
+                <!-- animal stage -->
+                <div class="mb-3">
+                    <div class="form-label text-indigo">Animal Stage</div>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnAnimalStage" id="btnCalf" autocomplete="off">
+                        <label class="btn" for="btnCalf">
+                            <img src="assets/images/animal-stage/calf.svg" alt="Calf" class="season-icon">
+                            Calf
+                        </label>
+                        <input type="radio" class="btn-check" name="btnAnimalStage" id="btnHeifer" autocomplete="off">
+                        <label class="btn" for="btnHeifer">
+                            <img src="assets/images/animal-stage/heifer.svg" alt="Heifer" class="season-icon">
+                            Heifer
+                        </label>
+                        <input type="radio" class="btn-check" name="btnAnimalStage" id="btnLactating"
+                            autocomplete="off">
+                        <label class="btn" for="btnLactating">
+                            <img src="assets/images/animal-stage/lactating.svg" alt="Lactating" class="season-icon">
+                            Lactating
+                        </label>
+                        <input type="radio" class="btn-check" name="btnAnimalStage" id="btnPregnant" autocomplete="off">
+                        <label class="btn" for="btnPregnant">
+                            <img src="assets/images/animal-stage/pregnant.svg" alt="Pregnant" class="season-icon">
+                            Pregnant
+                        </label>
+                        <input type="radio" class="btn-check" name="btnAnimalStage" id="btnAdult" autocomplete="off">
+                        <label class="btn" for="btnAdult">
+                            <img src="assets/images/animal-stage/adult.svg" alt="Adult" class="season-icon">
+                            Adult
+                        </label>
+                    </div>
+                </div>
 
-                <input type="checkbox" class="btn-check" id="btnDiarrhea" autocomplete="off">
-                <label class="btn" for="btnDiarrhea">
-                    <img src="assets/images/visible-symptoms/diarrhea.svg" alt="Nasal Discharge" class="season-icon">
-                    Diarrhea
-                </label>
+                <!-- behavior -->
+                <div class="mb-3">
+                    <div class="form-label text-teal">Behavior</div>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnBehavior" id="btnNormal" autocomplete="off">
+                        <label class="btn" for="btnNormal">
+                            <img src="assets/images/behavior/normal.svg" alt="Normal" class="season-icon">
+                            Normal
+                        </label>
+                        <input type="radio" class="btn-check" name="btnBehavior" id="btnAggressive" autocomplete="off">
+                        <label class="btn" for="btnAggressive">
+                            <img src="assets/images/behavior/aggressive.svg" alt="Aggressive" class="season-icon">
+                            Aggressive
+                        </label>
+                        <input type="radio" class="btn-check" name="btnBehavior" id="btnIsolated" autocomplete="off">
+                        <label class="btn" for="btnIsolated">
+                            <img src="assets/images/behavior/isolated.svg" alt="Isolated" class="season-icon">
+                            Isolated
+                        </label>
+                        <input type="radio" class="btn-check" name="btnBehavior" id="btnLethargic" autocomplete="off">
+                        <label class="btn" for="btnLethargic">
+                            <img src="assets/images/behavior/lethargic.svg" alt="Lethargic" class="season-icon">
+                            Lethargic
+                        </label>
+                        <input type="radio" class="btn-check" name="btnBehavior" id="btnRestless" autocomplete="off">
+                        <label class="btn" for="btnRestless">
+                            <img src="assets/images/behavior/restless.svg" alt="Restless" class="season-icon">
+                            Restless
+                        </label>
+                    </div>
+                </div>
 
-                <input type="checkbox" class="btn-check" id="btnLimping" autocomplete="off">
-                <label class="btn" for="btnLimping">
-                    <img src="assets/images/visible-symptoms/limping.svg" alt="Nasal Discharge" class="season-icon">
-                    Limping
-                </label>
+                <!-- visible symptoms -->
+                <div class="mb-3">
+                    <div class="form-label text-danger">Visible Symptoms <small class="text-muted fs-70">(Select all
+                            that
+                            apply)</small>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <input type="checkbox" class="btn-check" id="btnNasalDischarge" autocomplete="off">
+                        <label class="btn" for="btnNasalDischarge">
+                            <img src="assets/images/visible-symptoms/nasal-discharge.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Nasal Discharge
+                        </label>
 
-                <input type="checkbox" class="btn-check" id="btnSwallonUdder" autocomplete="off">
-                <label class="btn" for="btnSwallonUdder">
-                    <img src="assets/images/visible-symptoms/swallon-udder.svg" alt="Nasal Discharge"
-                        class="season-icon">
-                    Swallon Udder
-                </label>
+                        <input type="checkbox" class="btn-check" id="btnDiarrhea" autocomplete="off">
+                        <label class="btn" for="btnDiarrhea">
+                            <img src="assets/images/visible-symptoms/diarrhea.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Diarrhea
+                        </label>
 
-                <input type="checkbox" class="btn-check" id="btnCoughing" autocomplete="off">
-                <label class="btn" for="btnCoughing">
-                    <img src="assets/images/visible-symptoms/coughing.svg" alt="Nasal Discharge" class="season-icon">
-                    Coughing
-                </label>
-            </div>
-        </div>
+                        <input type="checkbox" class="btn-check" id="btnLimping" autocomplete="off">
+                        <label class="btn" for="btnLimping">
+                            <img src="assets/images/visible-symptoms/limping.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Limping
+                        </label>
 
-        <!-- visible symptoms -->
-        <div class="mb-0">
-            <div class="form-label text-purple">Vaccination Status</div>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnVaccStatus" id="btnuptodate" autocomplete="off">
-                <label class="btn" for="btnuptodate">
-                    <img src="assets/images/vacc-status/upto-date.svg" alt="Nasal Discharge" class="season-icon">
-                    Upto date
-                </label>
+                        <input type="checkbox" class="btn-check" id="btnSwallonUdder" autocomplete="off">
+                        <label class="btn" for="btnSwallonUdder">
+                            <img src="assets/images/visible-symptoms/swallon-udder.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Swallon Udder
+                        </label>
 
-                <input type="radio" class="btn-check" name="btnVaccStatus" id="btnpartial" autocomplete="off">
-                <label class="btn" for="btnpartial">
-                    <img src="assets/images/vacc-status/partial.svg" alt="Partial" class="season-icon">
-                    Partial
-                </label>
+                        <input type="checkbox" class="btn-check" id="btnCoughing" autocomplete="off">
+                        <label class="btn" for="btnCoughing">
+                            <img src="assets/images/visible-symptoms/coughing.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Coughing
+                        </label>
+                    </div>
+                </div>
 
-                <input type="radio" class="btn-check" name="btnVaccStatus" id="btnnotdone" autocomplete="off">
-                <label class="btn" for="btnnotdone">
-                    <img src="assets/images/vacc-status/not-done.svg" alt="Not done" class="season-icon">
-                    Not done
-                </label>
+                <!-- visible symptoms -->
+                <div class="mb-0">
+                    <div class="form-label text-purple">Vaccination Status</div>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnVaccStatus" id="btnuptodate" autocomplete="off">
+                        <label class="btn" for="btnuptodate">
+                            <img src="assets/images/vacc-status/upto-date.svg" alt="Nasal Discharge"
+                                class="season-icon">
+                            Upto date
+                        </label>
+
+                        <input type="radio" class="btn-check" name="btnVaccStatus" id="btnpartial" autocomplete="off">
+                        <label class="btn" for="btnpartial">
+                            <img src="assets/images/vacc-status/partial.svg" alt="Partial" class="season-icon">
+                            Partial
+                        </label>
+
+                        <input type="radio" class="btn-check" name="btnVaccStatus" id="btnnotdone" autocomplete="off">
+                        <label class="btn" for="btnnotdone">
+                            <img src="assets/images/vacc-status/not-done.svg" alt="Not done" class="season-icon">
+                            Not done
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="fixed-bottom bg-body px-3 py-2 shadow border-top">
-    <div class="d-flex justify-content-between gap-2">
-        <button class="btn btn-main-light w-50 fs-main py-2 rounded-5 fw-bold" type="button">
-            <i class="las la-sync-alt fs-90"></i> RESET
-        </button>
-        <button class="btn btn-main w-50 fs-main py-2 rounded-5 fw-bold" type="button">
-            <i class="las la-search fs-90"></i> PREDICT
-        </button>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <div class="d-flex justify-content-between gap-2">
+                <button class="btn btn-main-light w-50 fs-main py-2 rounded-5 fw-bold" type="button">
+                    <i class="las la-sync-alt fs-90"></i> RESET
+                </button>
+                <button class="btn btn-main w-50 fs-main py-2 rounded-5 fw-bold" type="button">
+                    <i class="las la-search fs-90"></i> PREDICT
+                </button>
+            </div>
+        </div>
     </div>
 </div>
