@@ -6,7 +6,7 @@ import { SecureComponent } from './layouts/secure/secure.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'temp', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   {
     path: '', component: PublicComponent,
     loadChildren: () => import('./layouts/public/public.module').then(m => m.PublicModule)
