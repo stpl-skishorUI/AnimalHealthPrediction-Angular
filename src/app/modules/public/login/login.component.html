@@ -17,15 +17,15 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="las la-user"></i></span>
                             <input type="text" class="form-control" id="txtUserName" placeholder="Username"
-                                aria-label="Username">
+                                aria-label="Username" [(ngModel)]="username" name="username">
                         </div>
                         <label for="txtPassword" class="form-label">Password</label>
                         <div class="input-group mb-4">
                             <span class="input-group-text"><i class="las la-lock"></i></span>
                             <input type="password" class="form-control" id="txtPassword" placeholder="Password"
-                                aria-label="Password">
+                                aria-label="Password" [(ngModel)]="password" name="password">
                         </div>
-                        <button type="submit" class="btn btn-main w-100 py-2 fs-80">
+                        <button type="button" class="btn btn-main w-100 py-2 fs-80" (click)="login()">
                             Login to VetHP
                         </button>
                     </div>
