@@ -4,6 +4,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   password: string = '';
   credentials: any;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.http.get('assets/login-credentials.json').subscribe(data => {
@@ -27,15 +28,15 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     if (!this.credentials) {
-      alert('Credentials not loaded yet. Please try again.');
+      this.toastr.error('Credentials not loaded yet. Please try again.');
       return;
     }
     if (this.username === this.credentials.username && this.password === this.credentials.password) {
-      alert('Login successful!');
+      this.toastr.success('Login successful!');
       localStorage.setItem('username', this.username);
       this.router.navigate(['/prediction-form']);
     } else {
-      alert('Invalid username or password.');
+      this.toastr.error('Invalid username or password.');
     }
   }
 }
