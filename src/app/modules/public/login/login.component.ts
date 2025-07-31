@@ -21,6 +21,12 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
+    // Redirect to prediction-form if already logged in
+    const storedUsername = localStorage.getItem('username');
+    if (storedUsername) {
+      this.router.navigate(['/prediction-form'], { replaceUrl: true });
+      return;
+    }
     this.http.get('assets/login-credentials.json').subscribe(data => {
       this.credentials = data;
     });
@@ -34,7 +40,7 @@ export class LoginComponent implements OnInit {
     if (this.username === this.credentials.username && this.password === this.credentials.password) {
       this.toastr.success('Login successful!');
       localStorage.setItem('username', this.username);
-      this.router.navigate(['/prediction-form']);
+      this.router.navigate(['/prediction-form'], { replaceUrl: true });
     } else {
       this.toastr.error('Invalid username or password.');
     }
