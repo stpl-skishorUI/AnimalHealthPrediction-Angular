@@ -53,7 +53,7 @@ export class PredictionFormComponent {
   ];
 
   vaccinations = [
-    { id: 'btnuptodate', label: 'Upto date', value: 'Upto date', icon: 'assets/images/vacc-status/upto-date.svg' },
+    { id: 'btnuptodate', label: 'Upto date', value: 'up-to-date', icon: 'assets/images/vacc-status/upto-date.svg' },
     { id: 'btnpartial', label: 'Partial', value: 'Partial', icon: 'assets/images/vacc-status/partial.svg' },
     { id: 'btnnotdone', label: 'Not done', value: 'Not done', icon: 'assets/images/vacc-status/not-done.svg' },
   ];
