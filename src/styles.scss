@@ -239,6 +239,7 @@ body {
     justify-content: center;
 }
 
+.form-container .btn-group label.active,
 .form-container .btn-group label:hover,
 .form-container .btn-group .btn-check:checked+.btn {
     background-color: var(--main-light-color);
