@@ -1,0 +1,91 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [],
+                "vaccinationStatus": "up-to-date"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "LOW",
+                    "riskScore": 2,
+                    "riskLevelDescription": "Minor health concerns requiring routine monitoring",
+                    "mortalityRisk": "1-3%",
+                    "economicImpact": "Minimal",
+                    "specificRisks": [
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Mild concern - Preventive monitoring recommended",
+                    "confidence": "90%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows no significant health concerns. Risk assessment indicates low risk level with 1-3% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "24 hours",
+                    "routineCheckup": "1 days",
+                    "priorityLevel": "PREVENTIVE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    },
+                    {
+                        "category": "Routine Health Maintenance",
+                        "action": "Preventive Health Monitoring",
+                        "details": "Daily visual assessment of general health including alertness, appetite, normal posture, and social behavior. Weekly detailed physical examination including temperature, pulse, respiration. Monthly body condition scoring and weight estimation. Quarterly comprehensive health evaluation including blood work if indicated.",
+                        "frequency": "Daily visual, weekly detailed, monthly BCS, quarterly comprehensive",
+                        "normalValues": "Alert and responsive, normal vital signs, appropriate body condition",
+                        "alertSigns": "Any deviation from normal behavior, vital sign abnormalities, body condition changes"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Continue routine health monitoring and preventive care",
+                    "Maintain vaccination and deworming schedule",
+                    "Regular nutritional assessment and body condition scoring"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 2,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        }
+    ]
+}
