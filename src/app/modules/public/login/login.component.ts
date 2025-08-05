@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/prediction-form'], { replaceUrl: true });
       return;
     }
-    this.http.get('assets/login-credentials.json').subscribe(data => {
+    this.http.get('assets/data/login-credentials.json').subscribe(data => {
       this.credentials = data;
     });
   }
