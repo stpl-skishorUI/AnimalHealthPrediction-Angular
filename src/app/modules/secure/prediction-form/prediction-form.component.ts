@@ -29,27 +29,27 @@ export class PredictionFormComponent {
   ];
 
   stages = [
-    { id: 'btnCalf', label: 'Calf', value: 'Calf', icon: 'assets/images/animal-stage/calf.svg' },
-    { id: 'btnHeifer', label: 'Heifer', value: 'Heifer', icon: 'assets/images/animal-stage/heifer.svg' },
-    { id: 'btnLactating', label: 'Lactating', value: 'Lactating', icon: 'assets/images/animal-stage/lactating.svg' },
-    { id: 'btnPregnant', label: 'Pregnant', value: 'Pregnant', icon: 'assets/images/animal-stage/pregnant.svg' },
-    { id: 'btnAdult', label: 'Adult', value: 'Adult', icon: 'assets/images/animal-stage/adult.svg' },
+    { id: 'btnCalf', label: 'Calf', value: 'calf', icon: 'assets/images/animal-stage/calf.svg' },
+    { id: 'btnHeifer', label: 'Heifer', value: 'heifer', icon: 'assets/images/animal-stage/heifer.svg' },
+    { id: 'btnLactating', label: 'Lactating', value: 'lactating', icon: 'assets/images/animal-stage/lactating.svg' },
+    { id: 'btnPregnant', label: 'Pregnant', value: 'pregnant', icon: 'assets/images/animal-stage/pregnant.svg' },
+    { id: 'btnAdult', label: 'Adult', value: 'adult', icon: 'assets/images/animal-stage/adult.svg' },
   ];
 
   behaviors = [
-    { id: 'btnNormal', label: 'Normal', value: 'Normal', icon: 'assets/images/behavior/normal.svg' },
-    { id: 'btnAggressive', label: 'Aggressive', value: 'Aggressive', icon: 'assets/images/behavior/aggressive.svg' },
-    { id: 'btnIsolated', label: 'Isolated', value: 'Isolated', icon: 'assets/images/behavior/isolated.svg' },
-    { id: 'btnLethargic', label: 'Lethargic', value: 'Lethargic', icon: 'assets/images/behavior/lethargic.svg' },
-    { id: 'btnRestless', label: 'Restless', value: 'Restless', icon: 'assets/images/behavior/restless.svg' },
+    { id: 'btnNormal', label: 'Normal', value: 'normal', icon: 'assets/images/behavior/normal.svg' },
+    { id: 'btnAggressive', label: 'Aggressive', value: 'aggressive', icon: 'assets/images/behavior/aggressive.svg' },
+    { id: 'btnIsolated', label: 'Isolated', value: 'isolated', icon: 'assets/images/behavior/isolated.svg' },
+    { id: 'btnLethargic', label: 'Lethargic', value: 'lethargic', icon: 'assets/images/behavior/lethargic.svg' },
+    { id: 'btnRestless', label: 'Restless', value: 'restless', icon: 'assets/images/behavior/restless.svg' },
   ];
 
   symptoms = [
-    { id: 'btnNasalDischarge', label: 'Nasal Discharge', value: 'Nasal Discharge', icon: 'assets/images/visible-symptoms/nasal-discharge.svg' },
-    { id: 'btnDiarrhea', label: 'Diarrhea', value: 'Diarrhea', icon: 'assets/images/visible-symptoms/diarrhea.svg' },
-    { id: 'btnLimping', label: 'Limping', value: 'Limping', icon: 'assets/images/visible-symptoms/limping.svg' },
-    { id: 'btnSwallonUdder', label: 'Swallon Udder', value: 'Swallon Udder', icon: 'assets/images/visible-symptoms/swallon-udder.svg' },
-    { id: 'btnCoughing', label: 'Coughing', value: 'Coughing', icon: 'assets/images/visible-symptoms/coughing.svg' },
+    { id: 'btnNasalDischarge', label: 'Nasal discharge', value: 'Nasal Discharge', icon: 'assets/images/visible-symptoms/nasal-discharge.svg' },
+    { id: 'btnDiarrhea', label: 'Diarrhea', value: 'diarrhea', icon: 'assets/images/visible-symptoms/diarrhea.svg' },
+    { id: 'btnLimping', label: 'Limping', value: 'limping', icon: 'assets/images/visible-symptoms/limping.svg' },
+    { id: 'btnSwallonUdder', label: 'Swollen udder', value: 'swallen udder', icon: 'assets/images/visible-symptoms/swallon-udder.svg' },
+    { id: 'btnCoughing', label: 'Coughing', value: 'coughing', icon: 'assets/images/visible-symptoms/coughing.svg' },
   ];
 
   vaccinations = [
