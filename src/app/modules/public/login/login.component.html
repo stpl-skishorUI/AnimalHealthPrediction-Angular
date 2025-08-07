@@ -1,8 +1,7 @@
 <div class="login-wrapper">
     <div class="login-header">
-        <!-- <i class="las la-stethoscope text-success"></i> -->
         <img src="assets/images/cow-logo.svg" alt="VetHP Logo" class="logo">
-        <h1> <i class="las la-stethoscope text-success"></i> VetHP Assistant</h1>
+        <h1><i class="las la-stethoscope text-success"></i> VetHP Assistant</h1>
         <p>Animal Health Prediction</p>
     </div>
     <div class="container">
@@ -13,21 +12,28 @@
                         <i class="las la-lock text-primary me-2"></i>Veterinary Login
                     </div>
                     <div class="card-body">
-                        <label for="txtUserName" class="form-label">Username</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="las la-user"></i></span>
-                            <input type="text" class="form-control" id="txtUserName" placeholder="Username"
-                                aria-label="Username" [(ngModel)]="username" name="username">
-                        </div>
-                        <label for="txtPassword" class="form-label">Password</label>
-                        <div class="input-group mb-4">
-                            <span class="input-group-text"><i class="las la-lock"></i></span>
-                            <input type="password" class="form-control" id="txtPassword" placeholder="Password"
-                                aria-label="Password" [(ngModel)]="password" name="password">
-                        </div>
-                        <button type="button" class="btn btn-main w-100 py-2 fs-80" (click)="login()">
-                            Login to VetHP
-                        </button>
+                        <form (ngSubmit)="login()">
+                            <label for="txtUserName" class="form-label">Username</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="las la-user"></i></span>
+                                <input type="text" class="form-control" id="txtUserName" placeholder="Username"
+                                    aria-label="Username" [(ngModel)]="username" name="username" required>
+                            </div>
+
+                            <label for="txtPassword" class="form-label">Password</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text"><i class="las la-lock"></i></span>
+                                <input type="password" class="form-control" id="txtPassword" placeholder="Password"
+                                    aria-label="Password" [(ngModel)]="password" name="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-main w-100 py-2 fs-80" [disabled]="isLoading">
+                                <span *ngIf="!isLoading">Login to VetHP</span>
+                                <span *ngIf="isLoading">
+                                    <i class="las la-spinner la-spin"></i> Logging in...
+                                </span>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
