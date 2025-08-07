@@ -20,16 +20,11 @@ export class AuthService {
     }
 
     logout(): void {
-        localStorage.removeItem('authToken');
         localStorage.removeItem('user');
     }
 
     isAuthenticated(): boolean {
-        return !!localStorage.getItem('authToken');
-    }
-
-    getToken(): string | null {
-        return localStorage.getItem('authToken');
+        return !!localStorage.getItem('user');
     }
 
     getCurrentUser(): any {

@@ -10,14 +10,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  username: string = 'User';
+  username: any;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    const storedUsername = localStorage.getItem('username');
+    const storedUsername = localStorage.getItem('user');
     if (storedUsername) {
-      this.username = storedUsername;
+      let localData = JSON.parse(storedUsername);
+      this.username = localData?.userName || '';
     }
   }
 

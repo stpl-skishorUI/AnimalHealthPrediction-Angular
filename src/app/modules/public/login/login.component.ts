@@ -53,10 +53,6 @@ export class LoginComponent implements OnInit {
 
           response.user = response?.responseData;
 
-
-          // Store authentication token
-          // localStorage.setItem('authToken', response.token);
-
           // Store user information
           if (response.user) {
             localStorage.setItem('user', JSON.stringify(response.user));
