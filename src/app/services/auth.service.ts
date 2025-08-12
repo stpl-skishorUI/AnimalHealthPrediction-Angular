@@ -10,11 +10,18 @@ import { LoginRequest, LoginResponse } from '../models/auth.model';
 })
 export class AuthService {
     private apiUrl = `${environment.apiBaseUrl}/user/UserLogin`;
+    private predictapiUrl = `${environment.apiBaseUrl}/HealthPrediction/predict`;
 
     constructor(private http: HttpClient) { }
 
     login(credentials: LoginRequest): Observable<LoginResponse> {
         return this.http.post<LoginResponse>(this.apiUrl, credentials).pipe(
+            catchError(this.handleError)
+        );
+    }
+
+    predict(formData: any) {
+        return this.http.post(this.predictapiUrl, formData).pipe(
             catchError(this.handleError)
         );
     }
