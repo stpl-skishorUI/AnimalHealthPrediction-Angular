@@ -52,11 +52,11 @@ export class PredictionResultComponent {
           this.predictionResult = parsedResult;
           console.log('Prediction Result:', this.predictionResult);
         } else {
-          this.toastr.error(response.message || 'Login failed');
+          this.toastr.error(response.message || 'Prediction failed');
         }
       },
       error: (error) => {
-        this.toastr.error(error.message || 'Login failed. Please try again.');
+        this.toastr.error(error.message || 'Prediction failed. Please try again.');
       }
     });
   }
