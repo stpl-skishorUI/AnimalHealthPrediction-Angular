@@ -26,7 +26,7 @@
                         <div class="btn-group w-100" role="group">
                             <label class="btn" *ngFor="let c of climates"
                                 [class.active]="form.get('climate')?.value === c.value">
-                                <input type="radio" class="btn-check" [id]="c.id" formControlName="climate"
+                                <input type="radio" class="btn-check" [id]="c.id" formControlName="climateType"
                                     [value]="c.value" autocomplete="off" />
                                 <img [src]="c.icon" [alt]="c.label" class="season-icon" />
                                 {{ c.label }}
@@ -40,7 +40,7 @@
                         <div class="btn-group" role="group">
                             <label class="btn" *ngFor="let stage of stages"
                                 [class.active]="form.get('stage')?.value === stage.value">
-                                <input type="radio" class="btn-check" [id]="stage.id" formControlName="stage"
+                                <input type="radio" class="btn-check" [id]="stage.id" formControlName="animalStage"
                                     [value]="stage.value" autocomplete="off" />
                                 <img [src]="stage.icon" [alt]="stage.label" class="season-icon" />
                                 {{ stage.label }}
@@ -86,7 +86,7 @@
                         <div class="btn-group" role="group">
                             <label class="btn" *ngFor="let v of vaccinations"
                                 [class.active]="form.get('vaccStatus')?.value === v.value">
-                                <input type="radio" class="btn-check" [id]="v.id" formControlName="vaccStatus"
+                                <input type="radio" class="btn-check" [id]="v.id" formControlName="vaccinationStatus"
                                     [value]="v.value" autocomplete="off" />
                                 <img [src]="v.icon" [alt]="v.label" class="season-icon" />
                                 {{ v.label }}

@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-prediction-form',
@@ -15,6 +18,8 @@ import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
 })
 export class PredictionFormComponent {
   form!: FormGroup;
+
+  predictionResult: any;
 
   seasons = [
     { id: 'btnSummer', label: 'Summer', value: 'Summer', icon: 'assets/images/season/summer.svg' },
@@ -48,7 +53,7 @@ export class PredictionFormComponent {
     { id: 'btnNasalDischarge', label: 'Nasal discharge', value: 'Nasal Discharge', icon: 'assets/images/visible-symptoms/nasal-discharge.svg' },
     { id: 'btnDiarrhea', label: 'Diarrhea', value: 'diarrhea', icon: 'assets/images/visible-symptoms/diarrhea.svg' },
     { id: 'btnLimping', label: 'Limping', value: 'limping', icon: 'assets/images/visible-symptoms/limping.svg' },
-    { id: 'btnSwallonUdder', label: 'Swollen udder', value: 'swallen udder', icon: 'assets/images/visible-symptoms/swallon-udder.svg' },
+    { id: 'btnSwallonUdder', label: 'Swollen udder', value: 'swollen udder', icon: 'assets/images/visible-symptoms/swallon-udder.svg' },
     { id: 'btnCoughing', label: 'Coughing', value: 'coughing', icon: 'assets/images/visible-symptoms/coughing.svg' },
   ];
 
@@ -58,15 +63,15 @@ export class PredictionFormComponent {
     { id: 'btnnotdone', label: 'Not done', value: 'not done', icon: 'assets/images/vacc-status/not-done.svg' },
   ];
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private toastr: ToastrService, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
       season: [''],
-      climate: [''],
-      stage: [''],
+      climateType: [''],
+      animalStage: [''],
       behavior: [''],
-      vaccStatus: [''],
+      vaccinationStatus: [''],
       symptoms: this.fb.array([]),
     });
   }
@@ -89,7 +94,53 @@ export class PredictionFormComponent {
     return symptomsArray.value.includes(symptom);
   }
 
-  submit() {
+  submit(): void {
     console.log(this.form.value);
+    let formData = this.form.value;
+
+    if (!this.form.valid) {
+      this.toastr.error('Please select all required fields and symptoms');
+      return;
+    }
+
+
+    const encFromData = JSON.stringify(formData);
+
+    this.router.navigate(['/prediction-result'], {
+      queryParams: { data: encFromData }
+    });
+
+    // this.authService.predict(formData).subscribe({
+    //   next: (response: any) => {
+    //     if (response.statusCode == '200') {
+
+    //       let parsedResult;
+
+    //       try {
+    //         // Parse the JSON string from responseData if it's a string
+    //         parsedResult = typeof response.responseData === 'string'
+    //           ? JSON.parse(response.responseData)
+    //           : response.responseData;
+    //       } catch (err) {
+    //         console.error("Error parsing JSON from responseData", err);
+    //         this.toastr.error("Invalid prediction data received");
+    //         return;
+    //       }
+
+
+    //       // Store pretty JSON in localStorage
+    //       //localStorage.setItem('jsonResult', beautifiedJson);
+
+    //       this.toastr.success(response.statusMessage);
+    //       this.router.navigate(['/prediction-result'], { replaceUrl: true });
+    //       this.predictionResult = JSON.stringify(parsedResult);
+    //     } else {
+    //       this.toastr.error(response.message || 'Login failed');
+    //     }
+    //   },
+    //   error: (error) => {
+    //     this.toastr.error(error.message || 'Login failed. Please try again.');
+    //   }
+    // });
   }
 }
