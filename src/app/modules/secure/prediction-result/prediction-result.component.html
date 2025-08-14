@@ -122,32 +122,77 @@
                     <span class="fs-80 fw-bold">Monitoring Recommendations</span>
                 </div>
             </div>
-            <div class="accordion accordion-flush" id="accordionExample">
-                <div class="accordion-item"
-                    *ngFor="let item of predictionResult?.jsonResult?.MonitoringRecommendations; let i = index">
-                    <h2 class="accordion-header" [id]="'heading' + item.id">
-                        <button class="accordion-button" [class.collapsed]="!item.expanded" type="button"
-                            (click)="toggleAccordion(i)" [attr.aria-expanded]="item.expanded">
-                            {{ item.Category }}
-                        </button>
-                    </h2>
-                    <div [id]="'collapse' + item.id" class="accordion-collapse collapse" [class.show]="item.expanded"
-                        [attr.aria-labelledby]="'heading' + item.id">
-                        <div class="accordion-body">
-                            <div class="form-label">Action :</div>
-                            <div class="form-data">{{ item.Action }}</div>
-
-                            <div class="form-label">AlertSigns :</div>
-                            <div class="form-data">{{ item.AlertSigns }}</div>
-
-                            <div class="form-label">Details :</div>
-                            <div class="form-data">{{ item.Details }}</div>
-
-                            <div class="form-label">Frequency :</div>
-                            <div class="form-data">{{ item.Frequency }}</div>
-
-                            <div class="form-label">NormalValues :</div>
-                            <div class="form-data">{{ item.NormalValues }}</div>
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item"
+                        *ngFor="let item of predictionResult?.jsonResult?.MonitoringRecommendations; let i = index">
+                        <div class="accordion-header" [id]="'heading' + item.id">
+                            <button class="accordion-button" [class.collapsed]="!item.expanded" type="button"
+                                (click)="toggleAccordion(i)" [attr.aria-expanded]="item.expanded">
+                                {{ item.Category }}
+                            </button>
+                        </div>
+                        <div [id]="'collapse' + item.id" class="accordion-collapse collapse"
+                            [class.show]="item.expanded" [attr.aria-labelledby]="'heading' + item.id">
+                            <div class="accordion-body p-2">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="las la-user-nurse icon bg-secondary-subtle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <div class="form-label">Action :</div>
+                                                <div class="form-data">{{ item.Action }}</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="las la-bell icon bg-secondary-subtle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <div class="form-label">AlertSigns :</div>
+                                                <div class="form-data">{{ item.AlertSigns }}</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="las la-file-contract icon bg-secondary-subtle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <div class="form-label">Details :</div>
+                                                <div class="form-data">{{ item.Details }}</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="las la-sync icon bg-secondary-subtle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <div class="form-label">Frequency :</div>
+                                                <div class="form-data">{{ item.Frequency }}</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="las la-universal-access icon bg-secondary-subtle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <div class="form-label">Precaution :</div>
+                                                <div class="form-data">{{ item.NormalValues }}</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
