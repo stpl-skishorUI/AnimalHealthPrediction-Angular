@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
@@ -67,12 +67,12 @@ export class PredictionFormComponent {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      season: [''],
-      climateType: [''],
-      animalStage: [''],
-      behavior: [''],
-      vaccinationStatus: [''],
-      symptoms: this.fb.array([]),
+      season: ['', Validators.required],
+      climateType: ['', Validators.required],
+      animalStage: ['', Validators.required],
+      behavior: ['', Validators.required],
+      vaccinationStatus: ['', Validators.required],
+      symptoms: this.fb.array([], Validators.required), // must have at least one
     });
   }
 
@@ -86,6 +86,8 @@ export class PredictionFormComponent {
     } else {
       symptomsArray.removeAt(index);
     }
+
+    symptomsArray.updateValueAndValidity();
   }
 
   // Used in HTML to check if a symptom is selected

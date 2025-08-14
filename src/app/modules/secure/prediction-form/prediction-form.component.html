@@ -18,6 +18,10 @@
                                 {{ s.label }}
                             </label>
                         </div>
+                        <div *ngIf="form.get('season')?.touched && form.get('season')?.invalid"
+                            class="text-danger small">
+                            Please select a season
+                        </div>
                     </div>
 
                     <!-- Climate Type -->
@@ -31,6 +35,10 @@
                                 <img [src]="c.icon" [alt]="c.label" class="season-icon" />
                                 {{ c.label }}
                             </label>
+                        </div>
+                        <div *ngIf="form.get('climateType')?.touched && form.get('climateType')?.invalid"
+                            class="text-danger small">
+                            Please select a climateType
                         </div>
                     </div>
 
@@ -46,6 +54,10 @@
                                 {{ stage.label }}
                             </label>
                         </div>
+                        <div *ngIf="form.get('animalStage')?.touched && form.get('animalStage')?.invalid"
+                            class="text-danger small">
+                            Please select a animalStage
+                        </div>
                     </div>
 
                     <!-- Behavior -->
@@ -59,6 +71,10 @@
                                 <img [src]="b.icon" [alt]="b.label" class="season-icon" />
                                 {{ b.label }}
                             </label>
+                        </div>
+                        <div *ngIf="form.get('behavior')?.touched && form.get('behavior')?.invalid"
+                            class="text-danger small">
+                            Please select a behavior
                         </div>
                     </div>
 
@@ -78,6 +94,10 @@
                                 {{ symptom.label }}
                             </label>
                         </div>
+                        <div *ngIf="form.get('symptoms')?.touched && form.get('symptoms')?.invalid"
+                            class="text-danger small">
+                            Please select at least one symptom
+                        </div>
                     </div>
 
                     <!-- Vaccination Status -->
@@ -85,12 +105,16 @@
                         <div class="form-label text-purple">Vaccination Status</div>
                         <div class="btn-group" role="group">
                             <label class="btn" *ngFor="let v of vaccinations"
-                                [class.active]="form.get('vaccStatus')?.value === v.value">
+                                [class.active]="form.get('vaccinationStatus')?.value === v.value">
                                 <input type="radio" class="btn-check" [id]="v.id" formControlName="vaccinationStatus"
                                     [value]="v.value" autocomplete="off" />
                                 <img [src]="v.icon" [alt]="v.label" class="season-icon" />
                                 {{ v.label }}
                             </label>
+                        </div>
+                        <div *ngIf="form.get('vaccinationStatus')?.touched && form.get('vaccinationStatus')?.invalid"
+                            class="text-danger small">
+                            Please select a vaccinationStatus
                         </div>
                     </div>
                 </form>
