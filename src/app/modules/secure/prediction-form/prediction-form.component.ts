@@ -72,7 +72,7 @@ export class PredictionFormComponent {
       animalStage: ['', Validators.required],
       behavior: ['', Validators.required],
       vaccinationStatus: ['', Validators.required],
-      symptoms: this.fb.array([], Validators.required), // must have at least one
+      symptoms: this.fb.array([]), // optional now
     });
   }
 
@@ -87,7 +87,7 @@ export class PredictionFormComponent {
       symptomsArray.removeAt(index);
     }
 
-    symptomsArray.updateValueAndValidity();
+    // symptomsArray.updateValueAndValidity();
   }
 
   // Used in HTML to check if a symptom is selected
@@ -97,20 +97,17 @@ export class PredictionFormComponent {
   }
 
   submit(): void {
-    console.log(this.form.value);
-    let formData = this.form.value;
-
-    if (!this.form.valid) {
-      this.toastr.error('Please select all required fields and symptoms');
+    if (this.form.invalid) {
+      this.toastr.error('Please select all required fields');
+      this.form.markAllAsTouched(); // highlight errors
       return;
     }
 
+    let formData = this.form.value;
+    // console.log(formData);
 
     const encFromData = JSON.stringify(formData);
-
-    this.router.navigate(['/prediction-result'], {
-      queryParams: { data: encFromData }
-    });
+    this.router.navigate(['/prediction-result'], { queryParams: { data: encFromData } });
 
     // this.authService.predict(formData).subscribe({
     //   next: (response: any) => {
