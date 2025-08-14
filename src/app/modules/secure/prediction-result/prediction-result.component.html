@@ -1,4 +1,4 @@
-<div class="row justify-content-center">
+<div class="row justify-content-center form-container">
     <div class="col-sm-4">
         <div class="page-header">
             <i class="las la-snowflake"></i>Simulation Analysis
@@ -9,137 +9,241 @@
             </a>
         </div>
 
-        <h6>{{'Hello : ' + predictionResult?.jsonResult?.AnimalStage || '-'}}</h6>
-
-        <div class="card rounded-3 form-container border-0 mb-3 form-container">
-            <div class="card-header bg-transparent border-bottom-0">
-                <div class="d-flex">
-                    <div class="fs-main fw-bold d-flex align-items-center gap-2">
-                        <i class="las la-stethoscope head-icon"></i>Health Assessment
-                    </div>
-                    <div class="badge bg-success-subtle text-success fs-70 ms-auto">
-                        <i class="las la-check-circle fs-main"></i>
-                        Low Risk
-                    </div>
-                    <!-- <div class="badge bg-warning-subtle text-warning fs-70 ms-auto">
-                <i class="las la-clock fs-main"></i>
-                Mid Risk
-            </div>
-            <div class="badge bg-danger-subtle text-danger fs-70 ms-auto">
-                <i class="las la-times-circle fs-main"></i>
-                High Risk
-            </div> -->
+        <!-- input -->
+        <div class="card card-body fs-75 mb-3 border-0">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+                    <h1 class="mb-0">
+                        <i class="las la-file-medical-alt text-pink"></i>
+                    </h1>
                 </div>
-            </div>
-            <div class="card-body">
-                <div class="form-data mb-2">Predicted Condition</div>
-                <div class="alert alert-primary py-2 fs-80 mb-3" role="alert">
-                    <div class="fw-bold mb-1">Suspected Gastrointestinal Disturbance</div>
-                    <div class="text-primary fs-75">Prediction Confidence: <span class="fw-bold">85%</span></div>
-                </div>
-
-                <div class="form-data mb-2">Veterinary Consultation</div>
-                <div class="d-flex flex-column gap-2">
-                    <div class="alert alert-warning py-2 text-bg-warning mb-0" role="alert">
-                        <div class="fw-bold fs-80">
-                            <i class="las la-stopwatch fs-default"></i>
-                            Within 24-48 Hours
-                        </div>
-                    </div>
-                    <!-- <div class="alert alert-danger py-2 text-bg-danger mb-0" role="alert">
-            <div class="fw-bold fs-80">
-                <i class="las la-times-circle fs-default"></i>
-                Immediate, Within 4-8 Hours
-            </div>
-            </div>
-            <div class="alert alert-success py-2 text-bg-success mb-0" role="alert">
-                <div class="fw-bold fs-80">
-                    <i class="las la-check-circle fs-default"></i>
-                    Routine Check-up
-                </div>
-            </div> -->
+                <div class="flex-grow-1 ms-2">
+                    In a
+                    <strong class="text-pink">{{predictionResult?.jsonResult?.ClimateType}}</strong>
+                    climate during the
+                    <strong class="text-pink">{{predictionResult?.jsonResult?.Season}}</strong>, a
+                    <strong class="text-pink">{{predictionResult?.jsonResult?.AnimalStage}}</strong>
+                    exhibiting
+                    <strong class="text-pink">{{predictionResult?.jsonResult?.Behavior}}</strong>
+                    behavior showing symptoms such as
+                    <strong class="text-pink" *ngFor="let data of predictionResult?.jsonResult?.VisibleSymptoms">
+                        {{data.Symptom}},
+                    </strong>
+                    while having a
+                    <strong class="text-pink">{{predictionResult?.jsonResult?.VaccinationStatus}}</strong>
+                    vaccination status.
                 </div>
             </div>
         </div>
 
-        <div class="card rounded-3 form-container border-0 mb-3 form-container">
+        <!-- Health Assessment -->
+        <div class="card rounded-3 border-0 mb-3">
             <div class="card-header bg-transparent border-bottom-0">
-                <div class="d-flex align-items-center gap-2">
-                    <i class="las la-award head-icon"></i>
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                        <i class="las la-stethoscope head-icon text-main bg-main-light"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fs-main fw-bold mb-1 text-main">Health Assessment</div>
+                        <div class="fs-75 text-muted">
+                            Applicable for
+                            <span *ngFor="let applicable of predictionResult?.jsonResult?.ApplicableFor">
+                                <strong>{{applicable.AnimalType}},</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-label mb-0">Priority Level :</div>
+                        <div class="form-data text-primary">{{predictionResult?.jsonResult?.PriorityLevel}}</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-label mb-0">Economic Impact :</div>
+                        <div class="form-data text-primary">{{predictionResult?.jsonResult?.EconomicImpact}}</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-label mb-0">Mortality Risk :</div>
+                        <div class="form-data text-primary">{{predictionResult?.jsonResult?.MortalityRisk}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Prediction condition Assessment -->
+        <div class="card rounded-3 border-0 mb-3">
+            <div class="card-header bg-transparent border-bottom-0">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <i class="las la-file-alt head-icon text-success bg-success-subtle"></i>
+                    </div>
+                    <div class="flex-grow-1 mx-2">
+                        <div class="fs-main fw-bold text-success mb-1">Prediction Assessment</div>
+                        <div class="text-dark fs-75">Prediction Confidence:
+                            <span class="fw-bold">{{predictionResult?.jsonResult?.Confidence}}</span>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="badge bg-success fs-70">
+                            {{predictionResult?.jsonResult?.DataQuality}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="fw-bold mb-1 fs-main">
+                    {{predictionResult?.jsonResult?.PredictedCondition}}
+                </div>
+                <div class="fs-75 mb-3">
+                    {{predictionResult?.jsonResult?.PredictedConditionDescription}}
+                </div>
+
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <div class="form-label mb-2">Veterinary Consultation</div>
+                <div class="fw-bold fs-80 text-danger">
+                    <i class="las la-stopwatch fs-default"></i>
+                    Within {{predictionResult?.jsonResult?.UrgentCare}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Monitoring Recommendations -->
+        <div class="card rounded-3 border-0 mb-3">
+            <div class="card-header bg-transparent border-bottom-0">
+                <div class="d-flex align-items-center gap-2 text-indigo">
+                    <i class="las la-award head-icon bg-indigo-subtle"></i>
                     <span class="fs-80 fw-bold">Monitoring Recommendations</span>
                 </div>
             </div>
-            <div class="card-body">
-                <ul class="results">
-                    <li>Monitor the animal's condition and behavior.</li>
-                    <li>Ensure access to clean water and appropriate feed.</li>
-                    <li>Observe for any signs of distress or discomfort.</li>
-                    <li>Maintain a clean and comfortable environment.</li>
-                    <li>Document any changes in the animal's health status.</li>
-                    <li>Prepare for the upcoming veterinary consultation.</li>
-                    <li>Follow any specific instructions provided by the veterinarian.</li>
-                    <li>Keep a record of the animal's health history for future reference.</li>
-                    <li>Stay informed about the animal's condition and any updates from the veterinary team.</li>
-                    <li>Ensure that all necessary supplies for care and monitoring are available.</li>
-                    <li>Communicate any concerns or observations to the veterinary team promptly.</li>
-                </ul>
-            </div>
-        </div>
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item"
+                    *ngFor="let item of predictionResult?.jsonResult?.MonitoringRecommendations; let i = index">
+                    <h2 class="accordion-header" [id]="'heading' + item.id">
+                        <button class="accordion-button" [class.collapsed]="!item.expanded" type="button"
+                            (click)="toggleAccordion(i)" [attr.aria-expanded]="item.expanded">
+                            {{ item.Category }}
+                        </button>
+                    </h2>
+                    <div [id]="'collapse' + item.id" class="accordion-collapse collapse" [class.show]="item.expanded"
+                        [attr.aria-labelledby]="'heading' + item.id">
+                        <div class="accordion-body">
+                            <div class="form-label">Action :</div>
+                            <div class="form-data">{{ item.Action }}</div>
 
-        <div class="alert alert-light" role="alert">
-            <div class="d-flex">
-                <div class="flex-shrink-0">
-                    <i class="las la-calendar-check media-icon text-warning"></i>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                    <div class="fs-80 fw-bold mb-1">Seasonal Alert</div>
-                    <div class="fs-75 text-muted">
-                        High risk period for heat stress and dehydration
+                            <div class="form-label">AlertSigns :</div>
+                            <div class="form-data">{{ item.AlertSigns }}</div>
+
+                            <div class="form-label">Details :</div>
+                            <div class="form-data">{{ item.Details }}</div>
+
+                            <div class="form-label">Frequency :</div>
+                            <div class="form-data">{{ item.Frequency }}</div>
+
+                            <div class="form-label">NormalValues :</div>
+                            <div class="form-data">{{ item.NormalValues }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="alert alert-light" role="alert">
+        <!-- Routine Checkup -->
+        <div class="alert alert-warning" role="alert">
             <div class="d-flex">
                 <div class="flex-shrink-0">
-                    <i class="las la-exclamation-triangle media-icon text-danger"></i>
+                    <i class="las la-calendar-check media-icon"></i>
                 </div>
                 <div class="flex-grow-1 ms-3">
-                    <div class="fs-80 fw-bold mb-1">Climate Considerations</div>
-                    <div class="fs-75 text-muted">
-                        Ensure continuous access to shade and fresh water. Monitor for panting and increased
-                        respiration.
+                    <div class="fs-main fw-bold mb-1">Routine Checkup</div>
+                    <div class="fs-75">
+                        {{predictionResult?.jsonResult?.RoutineCheckup}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card rounded-3 form-container border-0 mb-3 form-container">
+        <!-- Climate Considerations -->
+        <div class="card mb-3 border-0">
             <div class="card-header bg-transparent border-bottom-0">
                 <div class="d-flex align-items-center gap-2">
-                    <i class="las la-hand-point-right head-icon"></i>
-                    <span class="fs-80 fw-bold">Next Steps</span>
+                    <i class="las la-temperature-high head-icon text-danger bg-danger-subtle"></i>
+                    <div class="fs-80 fw-bold text-danger">Climate Considerations</div>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="d-flex flex-column gap-2">
-                    <div class="bg-success-subtle p-2 rounded-2 d-flex align-items-center gap-2 text-success">
-                        <i class="lar la-check-circle"></i>
-                        <div class="fs-75">Follow monitoring recommendations</div>
+            <ul class="list-group list-group-flush fs-80">
+                <li class="list-group-item"
+                    *ngFor="let climateconsider of predictionResult?.jsonResult?.ClimateConsiderations">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="las la-check-circle fs-default text-danger"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                            {{climateconsider.Consideration}}
+                        </div>
                     </div>
-                    <div class="bg-danger-subtle p-2 rounded-2 d-flex align-items-center gap-2 text-danger">
-                        <i class="lar la-times-circle"></i>
-                        <div class="fs-75">Contact veterinarian immediately</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Risk level -->
+        <div class="alert alert-danger" role="alert">
+            <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                    <i class="las la-exclamation-triangle media-icon"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="fs-80 fw-bold">Risk Level</div>
+                        <div class="badge bg-danger ms-auto fs-70">
+                            {{predictionResult?.jsonResult?.RiskLevel}}
+                        </div>
                     </div>
-                    <div class="bg-primary-subtle p-2 rounded-2 d-flex align-items-center gap-2 text-primary">
-                        <i class="las la-clipboard-list"></i>
-                        <div class="fs-75">Record observations daily</div>
+                    <div class="fs-75">
+                        {{predictionResult?.jsonResult?.RiskLevelDescription}}
                     </div>
                 </div>
+            </div>
+
+            <div class="form-data mb-2">Specific Risks :</div>
+            <div class="d-flex flex-wrap align-items-center gap-2">
+                <span class="badge bg-pink-subtle text-dark fs-70 p-2"
+                    *ngFor="let risks of predictionResult?.jsonResult?.SpecificRisks">
+                    {{risks.Risk}}
+                </span>
             </div>
         </div>
 
+        <!-- Next Steps -->
+        <div class="card rounded-3 border-0 mb-3">
+            <div class="card-header bg-transparent border-bottom-0">
+                <div class="d-flex align-items-center gap-2 text-purple">
+                    <i class="las la-hand-point-right head-icon bg-purple-subtle"></i>
+                    <span class="fs-main fw-bold">Next Step Recommendations</span>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush fs-80">
+                <li class="list-group-item"
+                    *ngFor="let nextstep of predictionResult?.jsonResult?.NextStepRecommendations">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <i class="las la-chevron-circle-right text-purple fs-default"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-2">
+                            {{nextstep.Recommendation}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Disclaimer -->
         <div class="alert alert-warning fs-65" role="alert">
             <strong>Disclaimer :</strong> This is an simulation based on veterinary expertise. Always consult with a
             qualified

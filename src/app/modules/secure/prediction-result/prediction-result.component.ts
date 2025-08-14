@@ -61,4 +61,12 @@ export class PredictionResultComponent {
     });
   }
 
+  toggleAccordion(index: number) {
+    if (this.predictionResult?.jsonResult?.MonitoringRecommendations) {
+      this.predictionResult.jsonResult.MonitoringRecommendations.forEach((item: any, i: number) => {
+        item.expanded = i === index ? !item.expanded : false;
+      });
+    }
+  }
+
 }
