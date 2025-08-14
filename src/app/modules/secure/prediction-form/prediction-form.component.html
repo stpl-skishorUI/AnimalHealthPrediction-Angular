@@ -25,7 +25,7 @@
                         <div class="form-label text-blue">Climate Type</div>
                         <div class="btn-group w-100" role="group">
                             <label class="btn" *ngFor="let c of climates"
-                                [class.active]="form.get('climate')?.value === c.value">
+                                [class.active]="form.get('climateType')?.value === c.value">
                                 <input type="radio" class="btn-check" [id]="c.id" formControlName="climateType"
                                     [value]="c.value" autocomplete="off" />
                                 <img [src]="c.icon" [alt]="c.label" class="season-icon" />
@@ -39,7 +39,7 @@
                         <div class="form-label text-indigo">Animal Stage</div>
                         <div class="btn-group" role="group">
                             <label class="btn" *ngFor="let stage of stages"
-                                [class.active]="form.get('stage')?.value === stage.value">
+                                [class.active]="form.get('animalStage')?.value === stage.value">
                                 <input type="radio" class="btn-check" [id]="stage.id" formControlName="animalStage"
                                     [value]="stage.value" autocomplete="off" />
                                 <img [src]="stage.icon" [alt]="stage.label" class="season-icon" />
