@@ -1,0 +1,1013 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [],
+                "vaccinationStatus": "up-to-date"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "LOW",
+                    "riskScore": 2,
+                    "riskLevelDescription": "Minor health concerns requiring routine monitoring",
+                    "mortalityRisk": "1-3%",
+                    "economicImpact": "Minimal",
+                    "specificRisks": [
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Mild concern - Preventive monitoring recommended",
+                    "confidence": "90%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows no significant health concerns. Risk assessment indicates low risk level with 1-3% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "24 hours",
+                    "routineCheckup": "1 days",
+                    "priorityLevel": "PREVENTIVE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    },
+                    {
+                        "category": "Routine Health Maintenance",
+                        "action": "Preventive Health Monitoring",
+                        "details": "Daily visual assessment of general health including alertness, appetite, normal posture, and social behavior. Weekly detailed physical examination including temperature, pulse, respiration. Monthly body condition scoring and weight estimation. Quarterly comprehensive health evaluation including blood work if indicated.",
+                        "frequency": "Daily visual, weekly detailed, monthly BCS, quarterly comprehensive",
+                        "normalValues": "Alert and responsive, normal vital signs, appropriate body condition",
+                        "alertSigns": "Any deviation from normal behavior, vital sign abnormalities, body condition changes"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Continue routine health monitoring and preventive care",
+                    "Maintain vaccination and deworming schedule",
+                    "Regular nutritional assessment and body condition scoring"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 2,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 2,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [],
+                "vaccinationStatus": "partial"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "MODERATE",
+                    "riskScore": 3,
+                    "riskLevelDescription": "Significant health risks requiring veterinary evaluation",
+                    "mortalityRisk": "3-10%",
+                    "economicImpact": "Low to Moderate",
+                    "specificRisks": [
+                        "Incomplete immunity",
+                        "Disease breakthrough",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Moderate risk - Professional veterinary consultation recommended",
+                    "confidence": "85%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows no significant health concerns. Risk assessment indicates moderate risk level with 3-10% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "12 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "ROUTINE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    },
+                    {
+                        "category": "Routine Health Maintenance",
+                        "action": "Preventive Health Monitoring",
+                        "details": "Daily visual assessment of general health including alertness, appetite, normal posture, and social behavior. Weekly detailed physical examination including temperature, pulse, respiration. Monthly body condition scoring and weight estimation. Quarterly comprehensive health evaluation including blood work if indicated.",
+                        "frequency": "Daily visual, weekly detailed, monthly BCS, quarterly comprehensive",
+                        "normalValues": "Alert and responsive, normal vital signs, appropriate body condition",
+                        "alertSigns": "Any deviation from normal behavior, vital sign abnormalities, body condition changes"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 3,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 3,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [],
+                "vaccinationStatus": "not done"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "MODERATE",
+                    "riskScore": 5,
+                    "riskLevelDescription": "Significant health risks requiring veterinary evaluation",
+                    "mortalityRisk": "3-10%",
+                    "economicImpact": "Low to Moderate",
+                    "specificRisks": [
+                        "Vaccine-preventable diseases",
+                        "Epidemic susceptibility",
+                        "Herd immunity compromise",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Moderate risk - Professional veterinary consultation recommended",
+                    "confidence": "85%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows no significant health concerns. Risk assessment indicates moderate risk level with 3-10% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "12 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "ROUTINE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    },
+                    {
+                        "category": "Routine Health Maintenance",
+                        "action": "Preventive Health Monitoring",
+                        "details": "Daily visual assessment of general health including alertness, appetite, normal posture, and social behavior. Weekly detailed physical examination including temperature, pulse, respiration. Monthly body condition scoring and weight estimation. Quarterly comprehensive health evaluation including blood work if indicated.",
+                        "frequency": "Daily visual, weekly detailed, monthly BCS, quarterly comprehensive",
+                        "normalValues": "Alert and responsive, normal vital signs, appropriate body condition",
+                        "alertSigns": "Any deviation from normal behavior, vital sign abnormalities, body condition changes"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 5,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 4,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "Nasal discharge"
+                ],
+                "vaccinationStatus": "up-to-date"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "MODERATE",
+                    "riskScore": 4,
+                    "riskLevelDescription": "Significant health risks requiring veterinary evaluation",
+                    "mortalityRisk": "3-10%",
+                    "economicImpact": "Low to Moderate",
+                    "specificRisks": [
+                        "Pneumonia",
+                        "Upper respiratory tract infection",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Moderate risk - Professional veterinary consultation recommended",
+                    "confidence": "85%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of respiratory infection. Risk assessment indicates moderate risk level with 3-10% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "12 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "ROUTINE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Respiratory Assessment",
+                        "action": "Breathing Pattern and Rate Monitoring",
+                        "details": "Count respiratory rate for full minute while animal is at rest. Observe for abdominal breathing, nostril flaring, or open-mouth breathing. Listen for abnormal sounds (wheezing, rattling). Check nasal discharge characteristics: color, consistency, odor, and bilateral vs unilateral presentation.",
+                        "frequency": "Every 4 hours during symptomatic period",
+                        "normalValues": "Respiratory rate: Adult cattle 26-50 breaths/min, Calves 40-60 breaths/min",
+                        "alertSigns": "Rate >60/min in adults, labored breathing, blue-tinged mucous membranes, thick yellow/green discharge"
+                    },
+                    {
+                        "category": "Temperature and Environmental Monitoring",
+                        "action": "Body Temperature and Respiratory Environment Assessment",
+                        "details": "Take rectal temperature using digital thermometer, hold for 60 seconds. Monitor ambient temperature, humidity, and air quality in housing area. Check for drafts, dust levels, and ventilation adequacy. Document any correlation between environmental conditions and symptom severity.",
+                        "frequency": "Temperature: 3 times daily; Environment: Daily assessment",
+                        "normalValues": "Body temperature: 101.5-103.5°F (38.6-39.7°C)",
+                        "alertSigns": "Temperature >104°F or <100°F, high humidity >80%, poor air circulation"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Chest auscultation and temperature monitoring",
+                    "Consider antibiotic treatment if bacterial infection suspected",
+                    "Improve ventilation and reduce dust exposure"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 4,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 5,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "Nasal discharge"
+                ],
+                "vaccinationStatus": "partial"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "MODERATE",
+                    "riskScore": 5,
+                    "riskLevelDescription": "Significant health risks requiring veterinary evaluation",
+                    "mortalityRisk": "3-10%",
+                    "economicImpact": "Low to Moderate",
+                    "specificRisks": [
+                        "Pneumonia",
+                        "Upper respiratory tract infection",
+                        "Incomplete immunity",
+                        "Disease breakthrough",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Moderate risk - Professional veterinary consultation recommended",
+                    "confidence": "85%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of respiratory infection. Risk assessment indicates moderate risk level with 3-10% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "12 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "ROUTINE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Respiratory Assessment",
+                        "action": "Breathing Pattern and Rate Monitoring",
+                        "details": "Count respiratory rate for full minute while animal is at rest. Observe for abdominal breathing, nostril flaring, or open-mouth breathing. Listen for abnormal sounds (wheezing, rattling). Check nasal discharge characteristics: color, consistency, odor, and bilateral vs unilateral presentation.",
+                        "frequency": "Every 4 hours during symptomatic period",
+                        "normalValues": "Respiratory rate: Adult cattle 26-50 breaths/min, Calves 40-60 breaths/min",
+                        "alertSigns": "Rate >60/min in adults, labored breathing, blue-tinged mucous membranes, thick yellow/green discharge"
+                    },
+                    {
+                        "category": "Temperature and Environmental Monitoring",
+                        "action": "Body Temperature and Respiratory Environment Assessment",
+                        "details": "Take rectal temperature using digital thermometer, hold for 60 seconds. Monitor ambient temperature, humidity, and air quality in housing area. Check for drafts, dust levels, and ventilation adequacy. Document any correlation between environmental conditions and symptom severity.",
+                        "frequency": "Temperature: 3 times daily; Environment: Daily assessment",
+                        "normalValues": "Body temperature: 101.5-103.5°F (38.6-39.7°C)",
+                        "alertSigns": "Temperature >104°F or <100°F, high humidity >80%, poor air circulation"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Chest auscultation and temperature monitoring",
+                    "Consider antibiotic treatment if bacterial infection suspected",
+                    "Improve ventilation and reduce dust exposure",
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 5,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 6,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "Nasal discharge"
+                ],
+                "vaccinationStatus": "not done"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "HIGH",
+                    "riskScore": 7,
+                    "riskLevelDescription": "Serious health conditions requiring immediate intervention",
+                    "mortalityRisk": "10-25%",
+                    "economicImpact": "Moderate to High",
+                    "specificRisks": [
+                        "Pneumonia",
+                        "Upper respiratory tract infection",
+                        "Vaccine-preventable diseases",
+                        "Epidemic susceptibility",
+                        "Herd immunity compromise",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": [
+                        "Unvaccinated symptomatic animal - epidemic risk"
+                    ]
+                },
+                "predictedCondition": {
+                    "condition": "High risk - Immediate veterinary attention required",
+                    "confidence": "88%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of respiratory infection. Risk assessment indicates high risk level with 10-25% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "4 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "URGENT"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Respiratory Assessment",
+                        "action": "Breathing Pattern and Rate Monitoring",
+                        "details": "Count respiratory rate for full minute while animal is at rest. Observe for abdominal breathing, nostril flaring, or open-mouth breathing. Listen for abnormal sounds (wheezing, rattling). Check nasal discharge characteristics: color, consistency, odor, and bilateral vs unilateral presentation.",
+                        "frequency": "Every 4 hours during symptomatic period",
+                        "normalValues": "Respiratory rate: Adult cattle 26-50 breaths/min, Calves 40-60 breaths/min",
+                        "alertSigns": "Rate >60/min in adults, labored breathing, blue-tinged mucous membranes, thick yellow/green discharge"
+                    },
+                    {
+                        "category": "Temperature and Environmental Monitoring",
+                        "action": "Body Temperature and Respiratory Environment Assessment",
+                        "details": "Take rectal temperature using digital thermometer, hold for 60 seconds. Monitor ambient temperature, humidity, and air quality in housing area. Check for drafts, dust levels, and ventilation adequacy. Document any correlation between environmental conditions and symptom severity.",
+                        "frequency": "Temperature: 3 times daily; Environment: Daily assessment",
+                        "normalValues": "Body temperature: 101.5-103.5°F (38.6-39.7°C)",
+                        "alertSigns": "Temperature >104°F or <100°F, high humidity >80%, poor air circulation"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day"
+                ],
+                "nextStepRecommendations": [
+                    "Chest auscultation and temperature monitoring",
+                    "Consider antibiotic treatment if bacterial infection suspected",
+                    "Improve ventilation and reduce dust exposure",
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 7,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 7,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "diarrhea"
+                ],
+                "vaccinationStatus": "up-to-date"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "MODERATE",
+                    "riskScore": 5,
+                    "riskLevelDescription": "Significant health risks requiring veterinary evaluation",
+                    "mortalityRisk": "3-10%",
+                    "economicImpact": "Low to Moderate",
+                    "specificRisks": [
+                        "Dehydration",
+                        "Electrolyte imbalance",
+                        "Secondary infections",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "Moderate risk - Professional veterinary consultation recommended",
+                    "confidence": "85%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of digestive disorders. Risk assessment indicates moderate risk level with 3-10% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "12 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "ROUTINE"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Digestive Health Monitoring",
+                        "action": "Hydration and Electrolyte Assessment",
+                        "details": "Monitor hydration status every 2-4 hours by checking skin tent test (normal: <2 seconds), mucous membrane color (should be pink), and capillary refill time (<2 seconds). Record water intake volume and frequency. Check for sunken eyes, dry nose, and reduced skin elasticity.",
+                        "frequency": "Every 2-4 hours during acute phase, then every 8 hours",
+                        "normalValues": "Water intake: 30-50L/day for adult cattle, Skin tent test: <2 seconds",
+                        "alertSigns": "Skin tent >3 seconds, dark urine, decreased urination, sunken eyes, dry mucous membranes"
+                    },
+                    {
+                        "category": "Fecal Monitoring",
+                        "action": "Stool Consistency and Frequency Tracking",
+                        "details": "Document fecal consistency using Bristol Stool Scale adaptation for cattle. Record frequency, volume, color, presence of blood, mucus, or undigested feed. Note any changes in odor intensity. Collect samples for laboratory analysis if diarrhea persists >24 hours.",
+                        "frequency": "Every defecation event for first 48 hours, then 3 times daily",
+                        "normalValues": "Normal: Semi-solid, brown, 12-18 bowel movements/day",
+                        "alertSigns": "Watery consistency, blood presence, foul odor, >20 movements/day, green coloration"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day",
+                    "Electrolyte replacement is critical in hot conditions"
+                ],
+                "nextStepRecommendations": [
+                    "Fecal examination for parasites and pathogens",
+                    "Fluid therapy if dehydration present",
+                    "Dietary modification and probiotics consideration"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 5,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 8,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "diarrhea"
+                ],
+                "vaccinationStatus": "partial"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "HIGH",
+                    "riskScore": 6,
+                    "riskLevelDescription": "Serious health conditions requiring immediate intervention",
+                    "mortalityRisk": "10-25%",
+                    "economicImpact": "Moderate to High",
+                    "specificRisks": [
+                        "Dehydration",
+                        "Electrolyte imbalance",
+                        "Secondary infections",
+                        "Incomplete immunity",
+                        "Disease breakthrough",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "High risk - Immediate veterinary attention required",
+                    "confidence": "88%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of digestive disorders. Risk assessment indicates high risk level with 10-25% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "4 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "URGENT"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Digestive Health Monitoring",
+                        "action": "Hydration and Electrolyte Assessment",
+                        "details": "Monitor hydration status every 2-4 hours by checking skin tent test (normal: <2 seconds), mucous membrane color (should be pink), and capillary refill time (<2 seconds). Record water intake volume and frequency. Check for sunken eyes, dry nose, and reduced skin elasticity.",
+                        "frequency": "Every 2-4 hours during acute phase, then every 8 hours",
+                        "normalValues": "Water intake: 30-50L/day for adult cattle, Skin tent test: <2 seconds",
+                        "alertSigns": "Skin tent >3 seconds, dark urine, decreased urination, sunken eyes, dry mucous membranes"
+                    },
+                    {
+                        "category": "Fecal Monitoring",
+                        "action": "Stool Consistency and Frequency Tracking",
+                        "details": "Document fecal consistency using Bristol Stool Scale adaptation for cattle. Record frequency, volume, color, presence of blood, mucus, or undigested feed. Note any changes in odor intensity. Collect samples for laboratory analysis if diarrhea persists >24 hours.",
+                        "frequency": "Every defecation event for first 48 hours, then 3 times daily",
+                        "normalValues": "Normal: Semi-solid, brown, 12-18 bowel movements/day",
+                        "alertSigns": "Watery consistency, blood presence, foul odor, >20 movements/day, green coloration"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day",
+                    "Electrolyte replacement is critical in hot conditions"
+                ],
+                "nextStepRecommendations": [
+                    "Fecal examination for parasites and pathogens",
+                    "Fluid therapy if dehydration present",
+                    "Dietary modification and probiotics consideration",
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 6,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 9,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "diarrhea"
+                ],
+                "vaccinationStatus": "not done"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "HIGH",
+                    "riskScore": 8,
+                    "riskLevelDescription": "Serious health conditions requiring immediate intervention",
+                    "mortalityRisk": "10-25%",
+                    "economicImpact": "Moderate to High",
+                    "specificRisks": [
+                        "Dehydration",
+                        "Electrolyte imbalance",
+                        "Secondary infections",
+                        "Vaccine-preventable diseases",
+                        "Epidemic susceptibility",
+                        "Herd immunity compromise",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": [
+                        "Unvaccinated symptomatic animal - epidemic risk"
+                    ]
+                },
+                "predictedCondition": {
+                    "condition": "High risk - Immediate veterinary attention required",
+                    "confidence": "88%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of digestive disorders. Risk assessment indicates high risk level with 10-25% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "4 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "URGENT"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Digestive Health Monitoring",
+                        "action": "Hydration and Electrolyte Assessment",
+                        "details": "Monitor hydration status every 2-4 hours by checking skin tent test (normal: <2 seconds), mucous membrane color (should be pink), and capillary refill time (<2 seconds). Record water intake volume and frequency. Check for sunken eyes, dry nose, and reduced skin elasticity.",
+                        "frequency": "Every 2-4 hours during acute phase, then every 8 hours",
+                        "normalValues": "Water intake: 30-50L/day for adult cattle, Skin tent test: <2 seconds",
+                        "alertSigns": "Skin tent >3 seconds, dark urine, decreased urination, sunken eyes, dry mucous membranes"
+                    },
+                    {
+                        "category": "Fecal Monitoring",
+                        "action": "Stool Consistency and Frequency Tracking",
+                        "details": "Document fecal consistency using Bristol Stool Scale adaptation for cattle. Record frequency, volume, color, presence of blood, mucus, or undigested feed. Note any changes in odor intensity. Collect samples for laboratory analysis if diarrhea persists >24 hours.",
+                        "frequency": "Every defecation event for first 48 hours, then 3 times daily",
+                        "normalValues": "Normal: Semi-solid, brown, 12-18 bowel movements/day",
+                        "alertSigns": "Watery consistency, blood presence, foul odor, >20 movements/day, green coloration"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day",
+                    "Electrolyte replacement is critical in hot conditions"
+                ],
+                "nextStepRecommendations": [
+                    "Fecal examination for parasites and pathogens",
+                    "Fluid therapy if dehydration present",
+                    "Dietary modification and probiotics consideration",
+                    "Complete vaccination schedule as per regional recommendations",
+                    "Consult veterinarian for catch-up vaccination protocol"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 8,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        },
+        {
+            "id": 10,
+            "inputs": {
+                "season": "Summer",
+                "climateType": "Hot-Dry",
+                "animalStage": "calf",
+                "behavior": "normal",
+                "visibleSymptoms": [
+                    "Nasal discharge",
+                    "diarrhea"
+                ],
+                "vaccinationStatus": "up-to-date"
+            },
+            "healthAssessment": {
+                "riskAssessment": {
+                    "riskLevel": "HIGH",
+                    "riskScore": 7,
+                    "riskLevelDescription": "Serious health conditions requiring immediate intervention",
+                    "mortalityRisk": "10-25%",
+                    "economicImpact": "Moderate to High",
+                    "specificRisks": [
+                        "Dehydration",
+                        "Electrolyte imbalance",
+                        "Secondary infections",
+                        "Pneumonia",
+                        "Upper respiratory tract infection",
+                        "Heat stress",
+                        "Dehydration",
+                        "Reduced fertility",
+                        "Neonatal diseases",
+                        "Passive immunity failure",
+                        "Growth disorders"
+                    ],
+                    "compoundRiskFactors": []
+                },
+                "predictedCondition": {
+                    "condition": "High risk - Immediate veterinary attention required",
+                    "confidence": "88%",
+                    "description": "Based on observed symptoms and risk factors, the animal shows signs of digestive disorders, respiratory infection. Risk assessment indicates high risk level with 10-25% mortality probability."
+                },
+                "veterinaryConsultation": {
+                    "urgentCare": "4 hours",
+                    "routineCheckup": "Follow standard schedule",
+                    "priorityLevel": "URGENT"
+                },
+                "monitoringRecommendations": [
+                    {
+                        "category": "Digestive Health Monitoring",
+                        "action": "Hydration and Electrolyte Assessment",
+                        "details": "Monitor hydration status every 2-4 hours by checking skin tent test (normal: <2 seconds), mucous membrane color (should be pink), and capillary refill time (<2 seconds). Record water intake volume and frequency. Check for sunken eyes, dry nose, and reduced skin elasticity.",
+                        "frequency": "Every 2-4 hours during acute phase, then every 8 hours",
+                        "normalValues": "Water intake: 30-50L/day for adult cattle, Skin tent test: <2 seconds",
+                        "alertSigns": "Skin tent >3 seconds, dark urine, decreased urination, sunken eyes, dry mucous membranes"
+                    },
+                    {
+                        "category": "Fecal Monitoring",
+                        "action": "Stool Consistency and Frequency Tracking",
+                        "details": "Document fecal consistency using Bristol Stool Scale adaptation for cattle. Record frequency, volume, color, presence of blood, mucus, or undigested feed. Note any changes in odor intensity. Collect samples for laboratory analysis if diarrhea persists >24 hours.",
+                        "frequency": "Every defecation event for first 48 hours, then 3 times daily",
+                        "normalValues": "Normal: Semi-solid, brown, 12-18 bowel movements/day",
+                        "alertSigns": "Watery consistency, blood presence, foul odor, >20 movements/day, green coloration"
+                    },
+                    {
+                        "category": "Respiratory Assessment",
+                        "action": "Breathing Pattern and Rate Monitoring",
+                        "details": "Count respiratory rate for full minute while animal is at rest. Observe for abdominal breathing, nostril flaring, or open-mouth breathing. Listen for abnormal sounds (wheezing, rattling). Check nasal discharge characteristics: color, consistency, odor, and bilateral vs unilateral presentation.",
+                        "frequency": "Every 4 hours during symptomatic period",
+                        "normalValues": "Respiratory rate: Adult cattle 26-50 breaths/min, Calves 40-60 breaths/min",
+                        "alertSigns": "Rate >60/min in adults, labored breathing, blue-tinged mucous membranes, thick yellow/green discharge"
+                    },
+                    {
+                        "category": "Temperature and Environmental Monitoring",
+                        "action": "Body Temperature and Respiratory Environment Assessment",
+                        "details": "Take rectal temperature using digital thermometer, hold for 60 seconds. Monitor ambient temperature, humidity, and air quality in housing area. Check for drafts, dust levels, and ventilation adequacy. Document any correlation between environmental conditions and symptom severity.",
+                        "frequency": "Temperature: 3 times daily; Environment: Daily assessment",
+                        "normalValues": "Body temperature: 101.5-103.5°F (38.6-39.7°C)",
+                        "alertSigns": "Temperature >104°F or <100°F, high humidity >80%, poor air circulation"
+                    },
+                    {
+                        "category": "Calf Development Monitoring",
+                        "action": "Growth and Health Assessment",
+                        "details": "Weekly weight measurements and growth rate calculations. Monitor colostrum intake within first 6 hours (4L minimum). Assess navel healing and check for umbilical infections. Monitor feeding behavior, milk intake volume, and starter feed consumption. Check for scours using fecal scoring system and monitor hydration status closely.",
+                        "frequency": "Daily health checks, weekly weights, feeding monitoring at each meal",
+                        "normalValues": "Weight gain: 0.5-0.8 kg/day, Normal navel healing, Active nursing behavior",
+                        "alertSigns": "Weight loss, swollen navel, diarrhea, dehydration, failure to nurse"
+                    },
+                    {
+                        "category": "Heat Stress Prevention",
+                        "action": "Thermal Regulation Monitoring",
+                        "details": "Monitor for heat stress indicators including panting (>80 breaths/min), drooling, seeking shade, and reduced feed intake during hot periods. Use Temperature-Humidity Index (THI) calculations to assess heat stress risk. Provide adequate water (increase by 50% during heat waves) and electrolyte supplementation. Monitor core body temperature rectally during peak heat periods.",
+                        "frequency": "Every 2 hours during peak heat (10 AM - 6 PM)",
+                        "normalValues": "THI <70 (no stress), Respiratory rate <60/min, Normal water intake",
+                        "alertSigns": "THI >80, Panting >80 breaths/min, Rectal temp >105°F, Reduced water intake"
+                    }
+                ],
+                "seasonalAlert": "High heat stress risk. Ensure adequate shade and water. Monitor for signs of heat exhaustion.",
+                "climateConsiderations": [
+                    "Increase water intake frequency and quantity",
+                    "Provide shade and cooling systems",
+                    "Monitor for dehydration and heat stress",
+                    "Adjust feeding times to cooler parts of the day",
+                    "Electrolyte replacement is critical in hot conditions"
+                ],
+                "nextStepRecommendations": [
+                    "Chest auscultation and temperature monitoring",
+                    "Consider antibiotic treatment if bacterial infection suspected",
+                    "Improve ventilation and reduce dust exposure",
+                    "Fecal examination for parasites and pathogens",
+                    "Fluid therapy if dehydration present",
+                    "Dietary modification and probiotics consideration"
+                ]
+            },
+            "metadata": {
+                "generatedAt": "2025-07-31T09:02:38.633Z",
+                "riskScore": 7,
+                "applicableFor": [
+                    "cattle",
+                    "buffalo"
+                ],
+                "dataQuality": "HIGH",
+                "validationStatus": "REVIEWED"
+            }
+        }
+    ]
+}
