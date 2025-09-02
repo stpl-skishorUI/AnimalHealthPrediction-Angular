@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
-    apiBaseUrl: 'https://animalhealth-api.erpguru.in/api'
+    production: true,
+    apiBaseUrl: 'https://animalhealth-api.icrtcmpkv.com/api'
 };
